@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>使用Cloudflared Tunnel实现内网穿透详细教程</title>
+    <link href="/posts/%E4%BD%BF%E7%94%A8Cloudflared-Tunnel%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/"/>
+    <url>/posts/%E4%BD%BF%E7%94%A8Cloudflared-Tunnel%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>1.电脑<br>2.域名<br>3.脑子</p><h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><h2 id="什么是内网穿透"><a href="#什么是内网穿透" class="headerlink" title="什么是内网穿透"></a>什么是内网穿透</h2><p>内网穿透是一个非常重要的东西，它能让我们本地的一个端口开放到公网，让公网的其他人来访问。如果没有内网穿透，那么这个端口只能在私网（可能就是你家的局域网）里被访问到。举个例子，我开了一台Minecraft服务器，想让我的好朋友来玩，这时如果没有内网穿透（除非你有公网ip），那么你的好朋友甚至都连接不上你的服务器。</p><h2 id="为什么选择Cloudflared-Tunnel"><a href="#为什么选择Cloudflared-Tunnel" class="headerlink" title="为什么选择Cloudflared Tunnel"></a>为什么选择Cloudflared Tunnel</h2><p>众所周知，内网穿透国内有很多，比如Sakura Frp、OpenFrp、花生壳内网穿透，但是这些内网穿透不是要实名认证，就是要money，显然，这些都是对我们不太友好的。并且Cloudflared Tunnel有着更多在安全性上的服务。于是在众多的内网穿透服务商中，我选择了Cloudflared Tunnel。</p><h2 id="Cloudflared-Tunnel的一些问题"><a href="#Cloudflared-Tunnel的一些问题" class="headerlink" title="Cloudflared Tunnel的一些问题"></a>Cloudflared Tunnel的一些问题</h2><p>首先，免费版的Cloudflared Tunnel服务器实在国外的，所以访问速度会比较慢，同时尽管有TCP的选项，但是似乎是不可用的。除此之外，UDP的协议也是不支持的，这样一来，Cloudflared Tunnel或许对于部分没有公网ip的服主不太友好。不过Cloudflared Tunnel整一个web项目也是可以的。</p><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><h2 id="注册Cloudflare账号（如果有账号，请跳过此步骤）"><a href="#注册Cloudflare账号（如果有账号，请跳过此步骤）" class="headerlink" title="注册Cloudflare账号（如果有账号，请跳过此步骤）"></a>注册Cloudflare账号（如果有账号，请跳过此步骤）</h2><p>首先，打开<a href="https://www.cloudflare.com/">Cloudflare官网</a>。<br><img src="/img/7/1.png"><br>点击注册，这时网页会跳转到注册界面。<br><img src="/img/7/2.png"><br>语言可能是英文的。可以点击右上角的English，选择简体中文。<br><img src="/img/7/3.png"><br>填入自己的电子邮件，并自定义一个密码。“我愿意偶尔收到有关 Cloudflare 产品、服务和活动的电子邮件更新和特别优惠。”的格子可以勾上，也可以不勾。<br><img src="/img/7/4.png"><br>当出现类似下面的界面时，说明Cloudflare账户注册成功了。<br><img src="/img/7/5.png"></p><h2 id="将自己的域名添加到Cloudflare"><a href="#将自己的域名添加到Cloudflare" class="headerlink" title="将自己的域名添加到Cloudflare"></a>将自己的域名添加到Cloudflare</h2><p>在购买域名的域名服务商那里把第一个NameServer改成arch.ns.cloudflare.com，第二个改成nina.ns.cloudflare.com。由于域名服务商过多，这里就不做演示了。<br>登录Cloudflare，点击“开始使用”。<br><img src="/img/7/6.png"><br>输入自己的域名，点击“继续”。<br><img src="/img/7/7.png"><br>选择Free计划。<br><img src="/img/7/8.png"><br>点击“继续”。<br><img src="/img/7/9.png"><br>后面照着提示去做就可以了。</p><h2 id="下载Cloudflare可执行文件"><a href="#下载Cloudflare可执行文件" class="headerlink" title="下载Cloudflare可执行文件"></a>下载Cloudflare可执行文件</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>打开<a href="https://github.com/cloudflare/cloudflared/releases/">https://github.com/cloudflare/cloudflared/releases/</a> ，可以看到这样的页面。<br><img src="/img/7/10.png"><br>找到合适自己电脑的版本，我的电脑是64位的，所以选择cloudflared-windows-amd64.exe的版本。</p><h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>如果连接不上的话，就从下面的链接下载。<br><a href="https://petercatalpa.lanzoue.com/i06Xy15waecf">64位</a>（密码7fru）。<a href="https://petercatalpa.lanzoue.com/i5WB815waj7a">32位</a>（密码：51ed）</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>把下载下来的文件名改为cloudflared.exe，并在此目录下按下shift和鼠标右键，选择“在终端中打开”，输入如下命令。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">./cloudflared.exe tunnel login<br></code></pre></td></tr></table></figure><p>这时浏览器会跳出登录窗口。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>站长撰写</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Twitter改叫X后……</title>
     <link href="/posts/Twitter%E6%94%B9%E5%8F%ABX%E5%90%8E%E2%80%A6%E2%80%A6/"/>
     <url>/posts/Twitter%E6%94%B9%E5%8F%ABX%E5%90%8E%E2%80%A6%E2%80%A6/</url>
@@ -276,7 +301,7 @@
     <link href="/posts/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E8%AF%B4%E6%98%8E/"/>
     <url>/posts/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E8%AF%B4%E6%98%8E/</url>
     
-    <content type="html"><![CDATA[<h1 id="Catalpa-SMP"><a href="#Catalpa-SMP" class="headerlink" title="Catalpa-SMP"></a>Catalpa-SMP</h1><p>版本为1.16.5，需要正版！是一个原版生存服务器，现在<del>由于服务器执行重大使命</del>未开放</p><ul><li><input checked disabled type="checkbox"> IP: mc.catalpa.eu.org 公网IPv4地址，稳定</li><li><input disabled type="checkbox"> IP：mc.catalpa-smp.eu.org 使用Cloudflared Tunnel未成功，暂不开放</li></ul><h1 id="VanillaPVP"><a href="#VanillaPVP" class="headerlink" title="VanillaPVP"></a>VanillaPVP</h1><p>版本为1.8.9，需要正版！是腐竹突发奇想打造的无政府服务器，现在<del>也是由于服务器执行重大使命</del>未开放</p><ul><li><input checked disabled type="checkbox"> IP: play.catalpa.eu.org 公网IPv4地址，稳定</li><li><input disabled type="checkbox"> IP：play.catalpa-smp.eu.org 使用Cloudflared Tunnel未成功，暂不开放</li></ul><hr><h1 id="Server-Lhkoes"><a href="#Server-Lhkoes" class="headerlink" title="Server-Lhkoes"></a>Server-Lhkoes</h1><p>版本为1.16.5（1.7.1~最新版本 可以直接进入）</p><ul><li><input checked disabled type="checkbox"> mc.hidfox.eu.org 公网IPv6的地址（比较稳定，若进不去可能没有IPv6）</li><li><input checked disabled type="checkbox"> frp-air.top:33577 樱花内网穿透（比较稳定）</li><li><input disabled type="checkbox"> <del>sv.hidfox.eu.org 是Cloudflare Tunnel，由于TCP协议的问题，未成功，请勿使用</del></li></ul><p>推荐周星帆的整合包：<a href="https://prozy.lanzout.com/b02esc5tg?pwd=0000">AF_primary</a>(密码:0000)</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Catalpa-SMP"><a href="#Catalpa-SMP" class="headerlink" title="Catalpa-SMP"></a>Catalpa-SMP</h1><p>版本为1.16.5，需要正版！是一个原版生存服务器，现在已经开放</p><ul><li><input checked disabled type="checkbox"> IP: mc.catalpa.eu.org 公网IPv4地址，稳定</li><li><input disabled type="checkbox"> IP：smp.catalpa.eu.org 使用Cloudflared Tunnel，可能连不上</li></ul><h1 id="VanillaPVP"><a href="#VanillaPVP" class="headerlink" title="VanillaPVP"></a>VanillaPVP</h1><p>版本为1.8.9，需要正版！是腐竹突发奇想打造的无政府服务器，现在已经开放</p><ul><li><input checked disabled type="checkbox"> IP: play.catalpa.eu.org 公网IPv4地址，稳定</li><li><input disabled type="checkbox"> IP：pvp.catalpa.eu.org 使用Cloudflared Tunnel，可能连不上</li></ul><hr><h1 id="Server-Lhkoes"><a href="#Server-Lhkoes" class="headerlink" title="Server-Lhkoes"></a>Server-Lhkoes</h1><p>版本为1.16.5（1.7.1~最新版本 可以直接进入）</p><ul><li><input checked disabled type="checkbox"> mc.hidfox.eu.org 公网IPv6的地址（比较稳定，若进不去可能没有IPv6）</li><li><input checked disabled type="checkbox"> frp-air.top:33577 樱花内网穿透（比较稳定）</li><li><input disabled type="checkbox"> <del>sv.hidfox.eu.org 是Cloudflare Tunnel，由于TCP协议的问题，未成功，请勿使用</del></li></ul><p>推荐周星帆的整合包：<a href="https://prozy.lanzout.com/b02esc5tg?pwd=0000">AF_primary</a>(密码:0000)</p>]]></content>
     
     
     <categories>

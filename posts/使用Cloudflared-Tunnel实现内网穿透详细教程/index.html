@@ -44,25 +44,33 @@
   <meta name="author" content="梓树">
   <meta name="keywords" content="">
   
-    <meta name="description" content="去年，马斯克斥资400亿美元收购了Twitter，成为了“世界首负”。从此，推特已经走上了不归路。特斯拉CEO埃隆·马斯克或许希望以微信为模板来改造推特。——澎湃新闻 2022年5月18日这几天，马斯克又把Twitter改名为了X，这似乎也印证了马斯克想要把推特打造成全球版微信的决心。Sensor Tower的数据分析显示，在更名后，推特用户人均单日使用时长下降了7%，用户人均单日会话数则下降了6">
+    <meta name="description" content="准备1.电脑2.域名3.脑子 写在前面什么是内网穿透内网穿透是一个非常重要的东西，它能让我们本地的一个端口开放到公网，让公网的其他人来访问。如果没有内网穿透，那么这个端口只能在私网（可能就是你家的局域网）里被访问到。举个例子，我开了一台Minecraft服务器，想让我的好朋友来玩，这时如果没有内网穿透（除非你有公网ip），那么你的好朋友甚至都连接不上你的服务器。 为什么选择Cloudflared">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Twitter改叫X后……">
-<meta property="og:url" content="https://catalpa.eu.org/posts/Twitter%E6%94%B9%E5%8F%ABX%E5%90%8E%E2%80%A6%E2%80%A6/index.html">
+<meta property="og:title" content="使用Cloudflared Tunnel实现内网穿透详细教程">
+<meta property="og:url" content="https://catalpa.eu.org/posts/%E4%BD%BF%E7%94%A8Cloudflared-Tunnel%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Catalpa - 你想要的，这里都没有">
-<meta property="og:description" content="去年，马斯克斥资400亿美元收购了Twitter，成为了“世界首负”。从此，推特已经走上了不归路。特斯拉CEO埃隆·马斯克或许希望以微信为模板来改造推特。——澎湃新闻 2022年5月18日这几天，马斯克又把Twitter改名为了X，这似乎也印证了马斯克想要把推特打造成全球版微信的决心。Sensor Tower的数据分析显示，在更名后，推特用户人均单日使用时长下降了7%，用户人均单日会话数则下降了6">
+<meta property="og:description" content="准备1.电脑2.域名3.脑子 写在前面什么是内网穿透内网穿透是一个非常重要的东西，它能让我们本地的一个端口开放到公网，让公网的其他人来访问。如果没有内网穿透，那么这个端口只能在私网（可能就是你家的局域网）里被访问到。举个例子，我开了一台Minecraft服务器，想让我的好朋友来玩，这时如果没有内网穿透（除非你有公网ip），那么你的好朋友甚至都连接不上你的服务器。 为什么选择Cloudflared">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://catalpa.eu.org/img/6/1.jpg">
-<meta property="og:image" content="https://catalpa.eu.org/img/6/2.jpg">
-<meta property="article:published_time" content="2023-08-11T11:51:07.000Z">
-<meta property="article:modified_time" content="2023-08-19T03:09:38.630Z">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/1.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/2.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/3.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/4.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/5.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/6.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/7.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/8.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/9.png">
+<meta property="og:image" content="https://catalpa.eu.org/img/7/10.png">
+<meta property="article:published_time" content="2023-08-19T03:47:17.000Z">
+<meta property="article:modified_time" content="2023-08-20T09:23:01.710Z">
 <meta property="article:author" content="梓树">
 <meta property="article:tag" content="站长撰写">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://catalpa.eu.org/img/6/1.jpg">
+<meta name="twitter:image" content="https://catalpa.eu.org/img/7/1.png">
   
   
   
-  <title>Twitter改叫X后…… - Catalpa - 你想要的，这里都没有</title>
+  <title>使用Cloudflared Tunnel实现内网穿透详细教程 - Catalpa - 你想要的，这里都没有</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -255,7 +263,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Twitter改叫X后……"></span>
+            <span id="subtitle" data-typed-text="使用Cloudflared Tunnel实现内网穿透详细教程"></span>
           
         </div>
 
@@ -271,8 +279,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-11 19:51" pubdate>
-          August 11, 2023 pm
+        <time datetime="2023-08-19 11:47" pubdate>
+          August 19, 2023 am
         </time>
       </span>
     
@@ -283,7 +291,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          304 字
+          1.2k 字
         
       </span>
     
@@ -294,7 +302,7 @@
         
         
         
-          3 分钟
+          11 分钟
         
       </span>
     
@@ -332,12 +340,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Twitter改叫X后……</h1>
+            <h1 style="display: none">使用Cloudflared Tunnel实现内网穿透详细教程</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：August 19, 2023 am
+                    本文最后更新于：August 20, 2023 pm
                   
                 
               </p>
@@ -345,8 +353,17 @@
             
               <div class="markdown-body">
                 
-                <p>去年，马斯克斥资400亿美元收购了Twitter，成为了“世界首负”。<br>从此，推特已经走上了不归路。<br>特斯拉CEO埃隆·马斯克或许希望以微信为模板来改造推特。——澎湃新闻 2022年5月18日<br>这几天，马斯克又把Twitter改名为了X，这似乎也印证了马斯克想要把推特打造成全球版微信的决心。<br>Sensor Tower的数据分析显示，在更名后，推特用户人均单日使用时长下降了7%，用户人均单日会话数则下降了6%。<br>当然我们作为吃瓜群众，只是看看罢了。不过值得关注的，还得是网友的整活。<br><img src="/img/6/1.jpg" srcset="/img/loading.gif" lazyload><br><img src="/img/6/2.jpg" srcset="/img/loading.gif" lazyload></p>
-<p>参考材料：<br>IT之家：推特改名 X 惹众怒，用户纷纷给应用打 1 星差评(<a target="_blank" rel="noopener" href="https://www.ithome.com/0/709/952.htm">https://www.ithome.com/0/709/952.htm</a>)</p>
+                <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>1.电脑<br>2.域名<br>3.脑子</p>
+<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><h2 id="什么是内网穿透"><a href="#什么是内网穿透" class="headerlink" title="什么是内网穿透"></a>什么是内网穿透</h2><p>内网穿透是一个非常重要的东西，它能让我们本地的一个端口开放到公网，让公网的其他人来访问。如果没有内网穿透，那么这个端口只能在私网（可能就是你家的局域网）里被访问到。举个例子，我开了一台Minecraft服务器，想让我的好朋友来玩，这时如果没有内网穿透（除非你有公网ip），那么你的好朋友甚至都连接不上你的服务器。</p>
+<h2 id="为什么选择Cloudflared-Tunnel"><a href="#为什么选择Cloudflared-Tunnel" class="headerlink" title="为什么选择Cloudflared Tunnel"></a>为什么选择Cloudflared Tunnel</h2><p>众所周知，内网穿透国内有很多，比如Sakura Frp、OpenFrp、花生壳内网穿透，但是这些内网穿透不是要实名认证，就是要money，显然，这些都是对我们不太友好的。并且Cloudflared Tunnel有着更多在安全性上的服务。于是在众多的内网穿透服务商中，我选择了Cloudflared Tunnel。</p>
+<h2 id="Cloudflared-Tunnel的一些问题"><a href="#Cloudflared-Tunnel的一些问题" class="headerlink" title="Cloudflared Tunnel的一些问题"></a>Cloudflared Tunnel的一些问题</h2><p>首先，免费版的Cloudflared Tunnel服务器实在国外的，所以访问速度会比较慢，同时尽管有TCP的选项，但是似乎是不可用的。除此之外，UDP的协议也是不支持的，这样一来，Cloudflared Tunnel或许对于部分没有公网ip的服主不太友好。不过Cloudflared Tunnel整一个web项目也是可以的。</p>
+<h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><h2 id="注册Cloudflare账号（如果有账号，请跳过此步骤）"><a href="#注册Cloudflare账号（如果有账号，请跳过此步骤）" class="headerlink" title="注册Cloudflare账号（如果有账号，请跳过此步骤）"></a>注册Cloudflare账号（如果有账号，请跳过此步骤）</h2><p>首先，打开<a target="_blank" rel="noopener" href="https://www.cloudflare.com/">Cloudflare官网</a>。<br><img src="/img/7/1.png" srcset="/img/loading.gif" lazyload><br>点击注册，这时网页会跳转到注册界面。<br><img src="/img/7/2.png" srcset="/img/loading.gif" lazyload><br>语言可能是英文的。可以点击右上角的English，选择简体中文。<br><img src="/img/7/3.png" srcset="/img/loading.gif" lazyload><br>填入自己的电子邮件，并自定义一个密码。“我愿意偶尔收到有关 Cloudflare 产品、服务和活动的电子邮件更新和特别优惠。”的格子可以勾上，也可以不勾。<br><img src="/img/7/4.png" srcset="/img/loading.gif" lazyload><br>当出现类似下面的界面时，说明Cloudflare账户注册成功了。<br><img src="/img/7/5.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="将自己的域名添加到Cloudflare"><a href="#将自己的域名添加到Cloudflare" class="headerlink" title="将自己的域名添加到Cloudflare"></a>将自己的域名添加到Cloudflare</h2><p>在购买域名的域名服务商那里把第一个NameServer改成	arch.ns.cloudflare.com，第二个改成nina.ns.cloudflare.com。由于域名服务商过多，这里就不做演示了。<br>登录Cloudflare，点击“开始使用”。<br><img src="/img/7/6.png" srcset="/img/loading.gif" lazyload><br>输入自己的域名，点击“继续”。<br><img src="/img/7/7.png" srcset="/img/loading.gif" lazyload><br>选择Free计划。<br><img src="/img/7/8.png" srcset="/img/loading.gif" lazyload><br>点击“继续”。<br><img src="/img/7/9.png" srcset="/img/loading.gif" lazyload><br>后面照着提示去做就可以了。</p>
+<h2 id="下载Cloudflare可执行文件"><a href="#下载Cloudflare可执行文件" class="headerlink" title="下载Cloudflare可执行文件"></a>下载Cloudflare可执行文件</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>打开<a target="_blank" rel="noopener" href="https://github.com/cloudflare/cloudflared/releases/">https://github.com/cloudflare/cloudflared/releases/</a> ，可以看到这样的页面。<br><img src="/img/7/10.png" srcset="/img/loading.gif" lazyload><br>找到合适自己电脑的版本，我的电脑是64位的，所以选择cloudflared-windows-amd64.exe的版本。</p>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>如果连接不上的话，就从下面的链接下载。<br><a target="_blank" rel="noopener" href="https://petercatalpa.lanzoue.com/i06Xy15waecf">64位</a>（密码7fru）。<a target="_blank" rel="noopener" href="https://petercatalpa.lanzoue.com/i5WB815waj7a">32位</a>（密码：51ed）</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>把下载下来的文件名改为cloudflared.exe，并在此目录下按下shift和鼠标右键，选择“在终端中打开”，输入如下命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">./cloudflared.exe tunnel login<br></code></pre></td></tr></table></figure>
+<p>这时浏览器会跳出登录窗口。</p>
 
                 
               </div>
@@ -365,7 +382,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%B2%99%E9%9B%95%E6%96%B0%E9%97%BB/" class="category-chain-item">沙雕新闻</a>
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
   
   
 
@@ -392,8 +409,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Twitter改叫X后……</div>
-      <div>https://catalpa.eu.org/posts/Twitter改叫X后……/</div>
+      <div>使用Cloudflared Tunnel实现内网穿透详细教程</div>
+      <div>https://catalpa.eu.org/posts/使用Cloudflared-Tunnel实现内网穿透详细教程/</div>
     </div>
     <div class="license-meta">
       
@@ -405,13 +422,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>August 11, 2023</div>
+          <div>August 19, 2023</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>August 19, 2023</div>
+          <div>August 20, 2023</div>
         </div>
       
       
@@ -448,18 +465,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/%E4%BD%BF%E7%94%A8Cloudflared-Tunnel%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" title="使用Cloudflared Tunnel实现内网穿透详细教程">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">使用Cloudflared Tunnel实现内网穿透详细教程</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/The-Ceiling-of-the-American-Robbers/" title="The Ceiling of the American Robbers">
-                        <span class="hidden-mobile">The Ceiling of the American Robbers</span>
+                      <a href="/posts/Twitter%E6%94%B9%E5%8F%ABX%E5%90%8E%E2%80%A6%E2%80%A6/" title="Twitter改叫X后……">
+                        <span class="hidden-mobile">Twitter改叫X后……</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
