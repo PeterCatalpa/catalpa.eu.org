@@ -1,0 +1,153 @@
+[14:08:54] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:08:54] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:08:54] [main/INFO]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:08:54] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:08:54] [main/INFO]: Forge Mod Loader version 11.15.1.2318 for Minecraft 1.8.9 loading
+[14:08:54] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_51, running on Windows 8.1:amd64:6.3, installed at C:\ProgramData\BadlionClient\jre1.8.0_51
+[14:08:54] [main/INFO]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from 3dSkinLayers-forge-mc1.8.9-1.2.0.jar
+[14:08:54] [main/WARN]: The coremod com.tterrag.blur.BlurPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Bossbar_Customizer-1.2.1_(1.8.9).jar
+[14:08:54] [main/INFO]: Loading tweaker cc.woverflow.crashpatch.hooks.ModsCheckerPlugin from CrashPatch-1.4.0.jar
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Essential-forge_1-8-9.jar
+[14:08:54] [main/INFO]: Loading tweaker cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker from evergreenhud-1.8.9-forge-1.0.0-beta5.jar
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Hypixel_Autocomplete-1.1_(1.8.9).jar
+[14:08:54] [main/INFO]: Loading tweaker cc.polyfrost.oneconfigwrapper.OneConfigWrapper from Hytils.Reborn-1.5.1-beta3.jar
+[14:08:54] [main/INFO]: Loading tweaker cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker from MC.1.8.9.Danker.s.Skyblock.Mod.-.2.1.jar
+[14:08:54] [main/INFO]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from NotEnoughUpdates-2.1.jar
+[14:08:54] [main/INFO]: Loading tweaker club.sk1er.oldanimations.loader.AnimationsTweak from OldAnimations_1.0.0_-_beta_10.1.jar
+[14:08:54] [main/INFO]: Loading tweaker cc.polyfrost.oneconfigwrapper.OneConfigWrapper from OverflowAnimations.1.8.9-forge.-2.0.1-beta6.jar
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from ParticlesEnhanced-1.2.0.jar
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Patcher-1.8.7_(1.8.9).jar
+[14:08:54] [main/INFO]: Loading tweaker net.wyvest.redaction.plugin.RedactionTweaker from REDACTION-1.3.5.jar
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Scrollable_Tooltips-1.4_(1.8.9).jar
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from simpletimechanger-1.0.2.jar
+[14:08:54] [main/INFO]: Loading tweaker gg.skytils.skytilsmod.tweaker.SkytilsTweaker from Skytils-1.7.4.jar
+[14:08:54] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Sound_Subtitles-1.2.2_(1.8.9).jar
+[14:08:54] [main/INFO]: Loading tweaker cc.woverflow.onecore.tweaker.OneCoreTweaker from VanillaHUD-1.1.1.jar
+[14:08:54] [main/INFO]: Calling tweak class optifine.OptiFineForgeTweaker
+[14:08:54] [main/INFO]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: acceptOptions
+[14:08:54] [main/INFO]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: injectIntoClassLoader
+[14:08:54] [main/INFO]: [optifine.OptiFineClassTransformer:dbg:242]: OptiFine ClassTransformer
+[14:08:54] [main/INFO]: [optifine.OptiFineClassTransformer:dbg:242]: OptiFine ZIP file: D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\optifine\OptiFine\1.8.9_HD_U_M5\OptiFine-1.8.9_HD_U_M5.jar
+[14:08:54] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[14:08:54] [main/INFO]: Loading tweak class name org.spongepowered.asm.launch.MixinTweaker
+[14:08:54] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.7.11 Source=file:/D:/    /    /  Ϸ/Minecraft/.minecraft/versions/SkyBlock/mods/3dSkinLayers-forge-mc1.8.9-1.2.0.jar Service=LaunchWrapper Env=CLIENT
+[14:08:55] [main/INFO]: Loading tweak class name gg.essential.loader.stage0.EssentialSetupTweaker
+[14:08:56] [main/INFO]: Starting Essential Loader (stage2) version 1.4.1 (e0be7ac529ab19ca5dca4c7c9c1ba653) [stable]
+[14:08:57] [main/WARN]: Found an old version of ASM (5.0.3). This may cause issues.
+[14:08:57] [main/WARN]: 
+[14:08:57] [main/WARN]: 
+[14:08:57] [main/WARN]: 
+[14:08:57] [main/WARN]: ==================================================================================
+[14:08:57] [main/WARN]: Attempting re-launch to load the newer version instead.
+[14:08:57] [main/WARN]: 
+[14:08:57] [main/WARN]: If AND ONLY IF you know what you are doing, have fixed the issue manually and need
+[14:08:57] [main/WARN]: to suppress this behavior (did you really fix it then?), you can set the
+[14:08:57] [main/WARN]: "essential.loader.relaunch" system property to false.
+[14:08:57] [main/WARN]: ==================================================================================
+[14:08:57] [main/WARN]: 
+[14:08:57] [main/WARN]: 
+[14:08:57] [main/WARN]: 
+[14:08:57] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:08:57] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:08:57] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:08:57] [main/DEBUG]: Injecting tracing printstreams for STDOUT/STDERR.
+[14:08:57] [main/INFO]: Forge Mod Loader version 11.15.1.2318 for Minecraft 1.8.9 loading
+[14:08:57] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_51, running on Windows 8.1:amd64:6.3, installed at C:\ProgramData\BadlionClient\jre1.8.0_51
+[14:08:57] [main/DEBUG]: Java classpath at launch is D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\mojang\netty\1.8.8\netty-1.8.8.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\oshi-project\oshi-core\1.1\oshi-core-1.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\io\netty\netty-all\4.0.23.Final\netty-all-4.0.23.Final.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\google\guava\guava\17.0\guava-17.0.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\mojang\realms\1.7.59\realms-1.7.59.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4-nightly-20150209\lwjgl_util-2.9.4-nightly-20150209.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\tv\twitch\twitch\6.5\twitch-6.5.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\minecraftforge\forge\1.8.9-11.15.1.2318-1.8.9\forge-1.8.9-11.15.1.2318-1.8.9.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\ow2\asm\asm-all\5.0.3\asm-all-5.0.3.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\jline\jline\2.13\jline-2.13.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\java3d\vecmath\1.5.2\vecmath-1.5.2.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\optifine\OptiFine\1.8.9_HD_U_M5\OptiFine-1.8.9_HD_U_M5.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;D:\    \    \  Ϸ\Minecraft\.minecraft\versions\SkyBlock\SkyBlock.jar
+[14:08:57] [main/DEBUG]: Java library path at launch is D:\    \    \  Ϸ\Minecraft\.minecraft\versions\SkyBlock\SkyBlock-natives
+[14:08:57] [main/DEBUG]: Enabling runtime deobfuscation
+[14:08:57] [main/DEBUG]: Instantiating coremod class FMLCorePlugin
+[14:08:57] [main/DEBUG]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[14:08:57] [main/DEBUG]: Enqueued coremod FMLCorePlugin
+[14:08:57] [main/DEBUG]: Instantiating coremod class FMLForgePlugin
+[14:08:57] [main/DEBUG]: Enqueued coremod FMLForgePlugin
+[14:08:57] [main/DEBUG]: All fundamental core mods are successfully located
+[14:08:57] [main/DEBUG]: Attempting to load commandline specified mods, relative to D:\    \    \  Ϸ\Minecraft\.minecraft\versions\SkyBlock
+[14:08:57] [main/DEBUG]: Discovering coremods
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy 3dSkinLayers-forge-mc1.8.9-1.2.0.jar
+[14:08:57] [main/INFO]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from 3dSkinLayers-forge-mc1.8.9-1.2.0.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy [1.8.9]_Sidebar_Mod_Revamp.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in [1.8.9]_Sidebar_Mod_Revamp.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Blur-MC1.8.9-1.0.4-2.jar
+[14:08:57] [main/TRACE]: Found FMLCorePluginContainsFMLMod marker in Blur-MC1.8.9-1.0.4-2.jar, it will be examined later for regular @Mod instances
+[14:08:57] [main/DEBUG]: Instantiating coremod class BlurPlugin
+[14:08:57] [main/WARN]: The coremod com.tterrag.blur.BlurPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[14:08:57] [main/DEBUG]: Enqueued coremod BlurPlugin
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Bossbar_Customizer-1.2.1_(1.8.9).jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Bossbar_Customizer-1.2.1_(1.8.9).jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy ChromaHUD-3.0_(1.8.9).jar
+[14:08:57] [main/DEBUG]: Not found coremod data in ChromaHUD-3.0_(1.8.9).jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Controlling-7.0.0.2.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in Controlling-7.0.0.2.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Cowlection-1.8.9-0.16.0.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in Cowlection-1.8.9-0.16.0.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy CrashPatch-1.4.0.jar
+[14:08:57] [main/INFO]: Loading tweaker cc.woverflow.crashpatch.hooks.ModsCheckerPlugin from CrashPatch-1.4.0.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy custom-crosshair-mod-v1.3.0-forge-mc1.8.9.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in custom-crosshair-mod-v1.3.0-forge-mc1.8.9.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Dungeon_Rooms-3.3.2.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in Dungeon_Rooms-3.3.2.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Essential-forge_1-8-9.jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Essential-forge_1-8-9.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy evergreenhud-1.8.9-forge-1.0.0-beta5.jar
+[14:08:57] [main/INFO]: Loading tweaker cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker from evergreenhud-1.8.9-forge-1.0.0-beta5.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Hypixel_Autocomplete-1.1_(1.8.9).jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Hypixel_Autocomplete-1.1_(1.8.9).jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Hytils.Reborn-1.5.1-beta3.jar
+[14:08:57] [main/INFO]: Loading tweaker cc.polyfrost.oneconfigwrapper.OneConfigWrapper from Hytils.Reborn-1.5.1-beta3.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy MC.1.8.9.Danker.s.Skyblock.Mod.-.2.1.jar
+[14:08:57] [main/INFO]: Loading tweaker cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker from MC.1.8.9.Danker.s.Skyblock.Mod.-.2.1.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy NotEnoughUpdates-2.1.jar
+[14:08:57] [main/INFO]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from NotEnoughUpdates-2.1.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy OldAnimations_1.0.0_-_beta_10.1.jar
+[14:08:57] [main/INFO]: Loading tweaker club.sk1er.oldanimations.loader.AnimationsTweak from OldAnimations_1.0.0_-_beta_10.1.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Orange's+Simple+Mods-1.2.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in Orange's+Simple+Mods-1.2.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy OverflowAnimations.1.8.9-forge.-2.0.1-beta6.jar
+[14:08:57] [main/INFO]: Loading tweaker cc.polyfrost.oneconfigwrapper.OneConfigWrapper from OverflowAnimations.1.8.9-forge.-2.0.1-beta6.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy ParticlesEnhanced-1.2.0.jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from ParticlesEnhanced-1.2.0.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Patcher-1.8.7_(1.8.9).jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Patcher-1.8.7_(1.8.9).jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy RawInput-1.1.1.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in RawInput-1.1.1.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy REDACTION-1.3.5.jar
+[14:08:57] [main/INFO]: Loading tweaker net.wyvest.redaction.plugin.RedactionTweaker from REDACTION-1.3.5.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Resource_Pack_Manager_1.2.jar
+[14:08:57] [main/DEBUG]: Not found coremod data in Resource_Pack_Manager_1.2.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Scrollable_Tooltips-1.4_(1.8.9).jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Scrollable_Tooltips-1.4_(1.8.9).jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy simpletimechanger-1.0.2.jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from simpletimechanger-1.0.2.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy SkyblockAddons-1.7.2-for-MC-1.8.9.jar
+[14:08:57] [main/TRACE]: Found FMLCorePluginContainsFMLMod marker in SkyblockAddons-1.7.2-for-MC-1.8.9.jar, it will be examined later for regular @Mod instances
+[14:08:57] [main/DEBUG]: Instantiating coremod class SkyblockAddonsLoadingPlugin
+[14:08:57] [main/DEBUG]: The coremod codes.biscuit.skyblockaddons.tweaker.SkyblockAddonsLoadingPlugin requested minecraft version 1.8.9 and minecraft is 1.8.9. It will be loaded.
+[14:08:57] [main/DEBUG]: Enqueued coremod SkyblockAddonsLoadingPlugin
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Skytils-1.7.4.jar
+[14:08:57] [main/INFO]: Loading tweaker gg.skytils.skytilsmod.tweaker.SkytilsTweaker from Skytils-1.7.4.jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy Sound_Subtitles-1.2.2_(1.8.9).jar
+[14:08:57] [main/INFO]: Loading tweaker gg.essential.loader.stage0.EssentialSetupTweaker from Sound_Subtitles-1.2.2_(1.8.9).jar
+[14:08:57] [main/DEBUG]: Examining for coremod candidacy VanillaHUD-1.1.1.jar
+[14:08:57] [main/INFO]: Loading tweaker cc.woverflow.onecore.tweaker.OneCoreTweaker from VanillaHUD-1.1.1.jar
+[14:08:57] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[14:08:57] [main/INFO]: Loading tweak class name org.spongepowered.asm.launch.MixinTweaker
+[14:08:57] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/D:/    /    /  Ϸ/Minecraft/.minecraft/versions/SkyBlock/essential/Essential%20(forge_1.8.9).jar Service=LaunchWrapper Env=CLIENT
+[14:08:57] [main/INFO]: Loading tweak class name gg.essential.loader.stage0.EssentialSetupTweaker
+[14:08:57] [main/INFO]: Starting Essential Loader (stage2) version 1.4.1 (e0be7ac529ab19ca5dca4c7c9c1ba653) [stable]
+[14:08:57] [main/DEBUG]: Instantiating coremod class FMLLoadingPlugin
+[14:08:57] [main/DEBUG]: The coremod club.sk1er.bossbarcustomizer.forge.FMLLoadingPlugin requested minecraft version 1.8.9 and minecraft is 1.8.9. It will be loaded.
+[14:08:57] [main/DEBUG]: Enqueued coremod FMLLoadingPlugin
+[14:08:57] [main/DEBUG]: Instantiating coremod class PatcherTweaker
+[14:08:57] [main/DEBUG]: The coremod club.sk1er.patcher.tweaker.PatcherTweaker requested minecraft version 1.8.9 and minecraft is 1.8.9. It will be loaded.
+[14:08:57] [main/DEBUG]: Instantiating coremod class ModTweaker
+[14:08:57] [main/DEBUG]: The coremod club.sk1er.patcher.tweaker.other.ModTweaker requested minecraft version 1.8.9 and minecraft is 1.8.9. It will be loaded.
+[14:08:57] [main/DEBUG]: Enqueued coremod ModTweaker
+[14:08:58] [main/INFO]: Loading tweak class name cc.woverflow.crashpatch.hooks.ModsCheckerPlugin
+[14:08:58] [main/WARN]: Tweak class name gg.essential.loader.stage0.EssentialSetupTweaker has already been visited -- skipping
+[14:08:58] [main/INFO]: Loading tweak class name cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker
+[14:08:58] [main/INFO]: [cc.polyfrost.oneconfig.loader.stage0.OneConfigWrapperBase:addSSLStore:247]: Attempting to load Polyfrost certificate.
+[14:08:58] [main/INFO]: [cc.polyfrost.oneconfig.loader.stage0.OneConfigWrapperBase:<init>:38]: OneConfig has detected the version 1.8.9. If this is false, report this at https://inv.wtf/polyfrost
+[14:08:59] [main/INFO]: [cc.polyfrost.oneconfig.loader.OneConfigWrapperBase:<init>:49]: OneConfig has detected the version 1.8.9. If this is false, report this at https://inv.wtf/polyfrost
+[14:08:59] [main/WARN]: The coremod cc.polyfrost.overflowanimations.handlers.ModDetectorPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
